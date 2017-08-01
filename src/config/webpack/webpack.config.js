@@ -191,7 +191,7 @@ module.exports = (CONFIG, SWANKY_CONFIG) => {
       key: page.key,
       chunks: ['theme'],
       filename: !index ? 'index.html' : page.url,
-      template: 'html-loader!swanky-docs-loader?key=' + page.key + '!' + page.layoutSrc,
+      template: 'html-loader!removeComments="false"swanky-docs-loader?key=' + page.key + '!' + page.layoutSrc,
       inject: true
     };
 
